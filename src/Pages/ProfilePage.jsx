@@ -7,9 +7,9 @@ const profile = {
   name: 'John Doe',
   role: 'Verified Seller / Bidder',
   avatar: 'Images/icons/user-profile.svg',
-  itemsSold: 56,
-  activeBids: 12,
-  rating: '4.9★',
+  itemsSold: 4,
+  activeBids: 2,
+  rating: '4.9 ★',
   about:
     'Passionate collector and reseller specializing in luxury watches and rare antiques. John has been part of the auction community since 2022 and is known for fair deals and authentic listings.',
   auctions: [
