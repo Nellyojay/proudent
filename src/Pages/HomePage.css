@@ -1,6 +1,13 @@
+:root {
+  --primary: #00333a;
+  --secondary: #001e23e3;
+  --light: #00c8e7;
+  --time-lase: #ff0000ae;
+}
+
 .auction-wrapper {
   min-height: 100vh;
-  background: linear-gradient(180deg, #3d5681, #071021);
+  background: var(--secondary);
   color: #e6eef8;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   padding: 1rem;
@@ -58,8 +65,8 @@
   img {
     display: flex;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     
   }
 }
@@ -133,38 +140,34 @@
 /* Grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  background: #0b1220;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(2, 6, 23, 0.4);
   padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-height: 300px;
+  max-width: 200px;
+
 }
 
 .card-media {
-  height: 170px;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(2, 6, 23, 0.6);
+.time-lapse {
+  background: var(--primary);
   padding: 6px 8px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .price-tag {
@@ -172,6 +175,9 @@
   top: 10px;
   right: 10px;
   text-align: right;
+  background-color: rgba(2, 6, 23, 0.8);
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .price-tag small {
@@ -181,6 +187,18 @@
 .price-tag .price {
   font-weight: 700;
   font-size: 18px;
+}
+
+.product-image {
+  max-height: 200px;
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: stretch;
+  }
 }
 
 .card-header {
