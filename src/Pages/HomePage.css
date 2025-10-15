@@ -1,0 +1,247 @@
+.auction-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3d5681, #071021);
+  color: #e6eef8;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.auction-container {
+  width: 100%;
+  max-width: 80%;
+}
+
+/* Header */
+.auction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #1e293b, #0f1724);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+}
+
+.logo strong {
+  color: #ff7a59;
+  font-size: 20px;
+}
+
+.lead {
+  color: #94a3b8;
+  font-size: 13px;
+  margin: 0;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+
+  img {
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    
+  }
+}
+
+.btn-primary {
+  background: #ff7a59;
+  color: #081020;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #0b1220;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e6eef8;
+  padding: 8px;
+}
+
+.search-bar select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: #94a3b8;
+}
+
+.sort-filter {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.sort-filter select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: #94a3b8;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.4);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 300px;
+}
+
+.card-media {
+  height: 170px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(2, 6, 23, 0.6);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.price-tag small {
+  color: #94a3b8;
+}
+
+.price-tag .price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-header small {
+  color: #94a3b8;
+}
+
+.description {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-bid {
+  background: linear-gradient(90deg, #ff8f6b, #ff6b87);
+  color: #071021;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-watch {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  padding: 9px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+}
