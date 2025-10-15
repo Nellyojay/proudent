@@ -1,13 +1,11 @@
-import { Link } from 'react-router'
+import { Header } from '../Components/Header';
 
 export function HomePage() {
   return (
     <div className='content'>
-      <Link to="/profile">
-        <span>Profile</span>
-      </Link>
+      <Header />
 
-      <h1>okudi</h1>
+      <h1>Okudi</h1>
     </div>
   );
 }
