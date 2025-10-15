@@ -129,7 +129,7 @@ export function HomePage() {
               <p className="description">{item.description}</p>
               <div className="card-footer">
                 <div className="price-block">
-                  <div className="price">${item.price}</div>
+                  <div className="price">UGX{item.price}</div>
                   <small>Static demo</small>
                 </div>
                 <div className="actions">
@@ -142,7 +142,7 @@ export function HomePage() {
         </main>
 
         <footer className="footer">
-          <p>&copy; 2025. ProudEnt LTD</p>
+          <p>&copy; 2025. ProudEnt. All rights reserved</p>
         </footer>
       </div>
     </div>
