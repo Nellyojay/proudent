@@ -3,6 +3,7 @@
   --secondary: #001e23e3;
   --light: #00c8e7;
   --time-lase: #ff0000ae;
+  --small: #94a3b8a7;
 }
 
 .profile-wrapper {
@@ -133,6 +134,11 @@
   max-height: 250px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.h3 {
+  border-radius: 10px;
+  height: 100px;
 }
 
 .btn-bid {

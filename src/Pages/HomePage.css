@@ -3,6 +3,7 @@
   --secondary: #001e23e3;
   --light: #00c8e7;
   --time-lase: #ff0000ae;
+  --small: #94a3b8a7;
 }
 
 .auction-wrapper {
@@ -202,8 +203,8 @@
 
 .card-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .card-header h3 {
@@ -212,7 +213,8 @@
 }
 
 .card-header small {
-  color: #94a3b8;
+  color: var(--small);
+  font-size: .7rem;
 }
 
 .description {

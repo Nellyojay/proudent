@@ -93,7 +93,10 @@ export function ProfilePage() {
               return (
                 <div key={a.id} className="auction-card">
                   <img src={a.image} alt={a.title} />
-                  <h3>{a.title}</h3>
+                  <div className='h3'>
+                    <h3>{a.title}</h3>
+                  </div>
+                  
                   <p>
                     Current Bid: <strong>{isOpen && typeof a.currentBid === 'number' ? `${a.currency} ${a.currentBid.toLocaleString()}` : 'Bid Closed'}</strong>
                   </p>

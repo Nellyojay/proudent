@@ -129,7 +129,7 @@ export function HomePage() {
               <p className="description">{item.description}</p>
               <div className="card-footer">
                 <div className="price-block">
-                  <div className="price">UGX{item.price}</div>
+                  <div className="price">UGX {item.price}</div>
                   <small>Static demo</small>
                 </div>
                 <div className="actions">
